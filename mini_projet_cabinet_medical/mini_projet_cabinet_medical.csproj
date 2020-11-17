@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{41E8C156-0527-4F84-877F-4C5559FCA1D3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>mini_projet_cabinet_medical</RootNamespace>
+    <AssemblyName>mini_projet_cabinet_medical</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\test\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="acceuilmedecin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acceuilmedecin.Designer.cs">
+      <DependentUpon>acceuilmedecin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AcceuilPrincipale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcceuilPrincipale.Designer.cs">
+      <DependentUpon>AcceuilPrincipale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Acceuilsecrétaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acceuilsecrétaire.Designer.cs">
+      <DependentUpon>Acceuilsecrétaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADO.cs" />
+    <Compile Include="ajouteFacteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajouteFacteur.Designer.cs">
+      <DependentUpon>ajouteFacteur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ajouterdossiermedical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajouterdossiermedical.Designer.cs">
+      <DependentUpon>ajouterdossiermedical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ajouter_rdv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajouter_rdv.Designer.cs">
+      <DependentUpon>ajouter_rdv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dossier médical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dossier médical.Designer.cs">
+      <DependentUpon>Dossier médical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dossiermedicalmedecin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dossiermedicalmedecin.Designer.cs">
+      <DependentUpon>dossiermedicalmedecin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facteur.Designer.cs">
+      <DependentUpon>Facteur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inscreption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inscreption.Designer.cs">
+      <DependentUpon>inscreption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="profilmedecin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="profilmedecin.Designer.cs">
+      <DependentUpon>profilmedecin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fichepatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fichepatient.Designer.cs">
+      <DependentUpon>Fichepatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouterpatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouterpatient.Designer.cs">
+      <DependentUpon>Ajouterpatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouterordonnance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouterordonnance.Designer.cs">
+      <DependentUpon>Ajouterordonnance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ordonnance medecin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ordonnance medecin.Designer.cs">
+      <DependentUpon>ordonnance medecin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ordonnance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ordonnance.Designer.cs">
+      <DependentUpon>ordonnance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RDV.Designer.cs">
+      <DependentUpon>RDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="profilsecrétaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="profilsecrétaire.Designer.cs">
+      <DependentUpon>profilsecrétaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="acceuilmedecin.resx">
+      <DependentUpon>acceuilmedecin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcceuilPrincipale.resx">
+      <DependentUpon>AcceuilPrincipale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Acceuilsecrétaire.resx">
+      <DependentUpon>Acceuilsecrétaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ajouteFacteur.resx">
+      <DependentUpon>ajouteFacteur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ajouterdossiermedical.resx">
+      <DependentUpon>ajouterdossiermedical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ajouter_rdv.resx">
+      <DependentUpon>ajouter_rdv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dossier médical.resx">
+      <DependentUpon>Dossier médical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dossiermedicalmedecin.resx">
+      <DependentUpon>dossiermedicalmedecin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facteur.resx">
+      <DependentUpon>Facteur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inscreption.resx">
+      <DependentUpon>inscreption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fichepatient.resx">
+      <DependentUpon>Fichepatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouterpatient.resx">
+      <DependentUpon>Ajouterpatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouterordonnance.resx">
+      <DependentUpon>Ajouterordonnance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ordonnance medecin.resx">
+      <DependentUpon>ordonnance medecin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ordonnance.resx">
+      <DependentUpon>ordonnance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profilmedecin.resx">
+      <DependentUpon>profilmedecin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RDV.resx">
+      <DependentUpon>RDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profilsecrétaire.resx">
+      <DependentUpon>profilsecrétaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
